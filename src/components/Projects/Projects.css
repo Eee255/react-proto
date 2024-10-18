@@ -1,0 +1,121 @@
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.container1{
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+.text-box{
+  padding: 20px 30px;
+  background: #fdf9ff;
+  border: 1px solid #e8dfec;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.left-container{
+  left: 0;
+}
+.right-container{
+  left: 50%;
+}
+.container1 img{
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+.right-container img{
+  left: -20px;
+}
+.timeline::after{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #e8dfec;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+.text-box h2{
+  font-weight: 600;
+}
+.text-box p{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.technologies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.technologies p{
+  background-color: rgb(63, 72, 72);
+  color: #fff;
+  padding: 10px;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #e8dfec;
+  left: -15px;
+}
+.left-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #e8dfec;
+  right: -15px;
+}
+@media screen and (max-width: 600px) {
+  .timeline{
+    margin: 50px auto;
+  }
+  .timeline::after{
+    left: 31px;
+  }
+  .container1{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box{
+    font-size: 13px;
+  }
+  .text-box p{
+    margin-bottom: 10px;
+  }
+  .right-container{
+    left: 0;
+  }
+  .left-container img, .right-container img {
+    left: 10px;
+  }
+  .left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #e8dfec;
+    border-left: 0;
+    left: -15px;
+  }
+}

@@ -1,0 +1,256 @@
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: #504e70;
+}
+.section{
+    min-height: 100vh;
+    display: block;
+    opacity: 1;
+    padding: 0 30px;
+}
+.container2{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.home .container2{
+    margin-top: 170px;
+}
+.home .home-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+h3.hello{
+    font-size: 30px;
+    margin: 15px 0;
+}
+h3.hello span{
+    font-family: 'clicker Script', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ec1839;
+}
+.change-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: "Web Developer";
+    color: #ec1839;
+    animation: words 20s infinite;
+}
+
+.text-animation .spandar::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #ec1839;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+.text-animation .spanligh::after {
+    content: "";
+    background-color: #333;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #ec1839;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid red;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Frontend Developer";
+    }
+
+    21%,
+    40% {
+        content: "Python Developer";
+    }
+
+    41%,
+    60% {
+        content: "Web Developer";
+    }
+
+    61%,
+    80% {
+        content: "Backend Developer";
+    }
+
+    81%,
+    100% {
+        content: "Full Stack Web Developer";
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 45px;
+    gap: 30px;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    color: #f2f2fc;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    outline: none;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(65, 65, 136);
+    transition: 0.6s;
+    box-shadow: rgb(102, 102, 163);
+    border-radius: 6px;
+    transform: 2s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(3, 3, 77);
+}
+.btn-box a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    color: #f2f2fc;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: rgb(65, 65, 136);
+    transition: 0.6s;
+    box-shadow: rgb(102, 102, 163);
+    border-radius: 6px;
+    transform: 2s ease-in-out;
+}
+.btn-box a.btn:hover{
+    background-color: transparent;
+    color: var(--text-color);
+    box-shadow: 0 0 0.6rem #12f7ff;
+}
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    border-bottom: 10px solid #ec1839;
+    border-right: 10px solid #ec1839;
+    width: 80px;
+    right: 20px;
+    bottom: -40px;
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    border-top: 10px solid #ec1839;
+    border-left: 10px solid #ec1839;
+    width: 80px;
+    left: -20px;
+    top: -40px;
+}
+.home .home-img img{  
+    margin: auto;
+    border-radius: 6px;
+    height: 400px;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 991px){
+    
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .small{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img img{
+        height: 250px;
+    }
+    .home-img::after{
+        right: -20px;
+        bottom: -20px;
+    }
+    .home-img::before{
+        left: -20px;
+        top: -20px;
+    }
+       
+}
+@media (max-width: 767px){
+
+    .change-text{
+        font-size: .9rem;
+    }
+    .home-img{
+        display: none;
+    }
+}

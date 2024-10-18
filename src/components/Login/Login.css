@@ -1,0 +1,55 @@
+.login-container{
+    background-image: url(../../assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-container{
+    background-color: #fff;
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(62, 10, 10, 0.7); 
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 0px 20px;
+    margin: 50px;
+}
+.small-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 70px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container input{
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    font-size: 16px;
+}
+.small-container form button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 50%;
+    text-align: center;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.small-container form p{
+    color: black;
+}
