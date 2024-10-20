@@ -33,7 +33,7 @@ const Projects = () => {
               <p>HTML</p>
               <p>CSS</p>
             </div>
-            <a href='https://eee255.github.io/static-spotify-clone/'>VISIT</a>
+            <a href='https://eee255.github.io/static-spotify-clone/' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='left-container-arrow'></span>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Projects = () => {
               <p>CSS</p>
               <p>Responsive</p>
             </div>
-            <a href='https://helpful-pika-331190.netlify.app/'>VISIT</a>
+            <a href='https://helpful-pika-331190.netlify.app/' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='right-container-arrow'></span>
         </div>
       </div>
@@ -70,7 +70,7 @@ const Projects = () => {
               <p>Rest API calls</p>
               <p>Bootstrap</p>
             </div>
-            <a href='bhanuwikipedia2.ccbp.tech'>VISIT</a>
+            <a href='bhanuwikipedia2.ccbp.tech' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='left-container-arrow'></span>
         </div>
       </div>
@@ -92,7 +92,7 @@ const Projects = () => {
               <p>JavaScript</p>
               <p>API integration</p>
             </div>
-            <a href='https://paracommerce.ccbp.tech'>VISIT</a>
+            <a href='https://paracommerce.ccbp.tech' target="_blank" rel="noopener noreferrer" >VISIT</a>
             <span className='right-container-arrow'></span>
         </div>
 
@@ -113,7 +113,7 @@ const Projects = () => {
               <p>fetch (for API requests)</p>
               <p>Responsive Design</p>
             </div>
-            <a href='https://spiffy-liger-7509c6.netlify.app/'>VISIT</a>
+            <a href='https://spiffy-liger-7509c6.netlify.app/' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='left-container-arrow'></span>
         </div>
       </div>
@@ -133,7 +133,7 @@ filtering items based on keywords and categories, ensuring a smooth and responsi
               <p>JavaScript</p>
               <p>React Hooks</p>
             </div>
-            <a href='https://66e7fdcf0c4251fc8300b092--loquacious-druid-b94727.netlify.app/'>VISIT</a>
+            <a href='https://66e7fdcf0c4251fc8300b092--loquacious-druid-b94727.netlify.app/' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='right-container-arrow'></span>
         </div>
       </div>
@@ -151,7 +151,7 @@ filtering items based on keywords and categories, ensuring a smooth and responsi
               <p>JavaScript</p>
               <p>Responsive</p>
             </div>
-            <a href='https://eee255.github.io/hungrybox/'>VISIT</a>
+            <a href='https://eee255.github.io/hungrybox/' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='left-container-arrow'></span>
         </div>
       </div>
@@ -168,7 +168,7 @@ filtering items based on keywords and categories, ensuring a smooth and responsi
               <p>CSS</p>
               <p>Responsive</p>
             </div>
-            <a href='netflixbhanu.ccbp.tech'>VISIT</a>
+            <a href='netflixbhanu.ccbp.tech' target="_blank" rel="noopener noreferrer">VISIT</a>
             <span className='right-container-arrow'></span>
         </div>
       </div>

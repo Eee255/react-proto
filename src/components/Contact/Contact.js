@@ -1,15 +1,30 @@
-import React, {useState} from 'react'
+import React, { useRef }from 'react'
+import emailjs from 'emailjs-com'
 import './Contact.css'
 import ThemeProvider from '../../ThemeProvider';
 import { useSelector } from 'react-redux';
 
 const Contact = () => {
-    const [name, setName] = useState('');
+    const form =  useRef();
     const theme = useSelector((state) => state.theme);
 
-  const handleInputChange = (event) => {
-    setName(event.target.value);
-  };
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_y35v1uq', 'template_t0oorj7', form.current, {
+            publicKey: '6cjdVl5mCA-gS5vbk',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+          e.target.reset()
+      };
 
   return (
     <ThemeProvider>
@@ -57,7 +72,7 @@ const Contact = () => {
                     <h3 className="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 className="contact-sub-title padd-15" style={{color : theme === 'light' ? '#302e4d' : 'blue'}}>I'M VERY RESPONSIVE TO MESSAGE</h4>
                     <div className="row">
-                        <form className="contact-form padd-15" id="contact-form">
+                        <form className="contact-form padd-15" id="contact-form" ref={form} onSubmit={sendEmail}>
                             <div className="row">
                                 <div className="form-item col-6 padd-15">
                                     <div className="form-group">
@@ -67,8 +82,6 @@ const Contact = () => {
                                             name="user_name"
                                             id="name"
                                             placeholder="Your Name"
-                                            value={name}  // Controlled input value
-                                            onChange={handleInputChange}  // Update state on change
                                         />
                                     </div>
                                 </div>

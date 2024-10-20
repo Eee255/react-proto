@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-text padd-15">
             <h3 style={{color : theme === 'light' ? '#302e4d' : '#fff'}}>A Passionate <span>Developer</span></h3>
             <h3 style={{color : theme === 'light' ? '#302e4d' : '#fff'}}>Who Loves to <span>Code</span></h3>
-            <p style={{color : theme === 'light' ? '#302e4d' : '#fff'}}>LLorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam cumque vitae ad tempora. Iusto nesciunt error tempore soluta eius facere illum, magnam blanditiis beatae sequi magni temporibus nobis repellendus?</p>
+            <p style={{color : theme === 'light' ? '#504e70' : '#fff'}}>Hi everyone, I'm Bhanu Prakash, a passionate coder with strong expertise in web development technologies like HTML, CSS, JavaScript, React, Node.js, SQL, and Python. I hold certifications in Python programming, responsive design, HTML, SQL, and dynamic web applications. I'm constantly honing my skills to ensure continuous growth and stay at the top of my game. I’m deeply committed to delivering my best and am excited to contribute 100% to any company that hires me. Thank you for visiting my website!</p>
         </div>
         <div className="about-content padd-15">
             <div className='row'>

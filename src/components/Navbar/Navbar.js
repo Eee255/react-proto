@@ -36,12 +36,13 @@ const Navbar = () => {
                 </div>
                 <div className={`nav-links ${isOpen ? 'active' : ''}`}>
                     <ul>
-                        <li><a href="#home" onClick={() => handleNavClick('home')}>Home</a></li>
+                        <li><a href="#home" onClick={() => handleNavClick('home')} >Home</a></li>
                         <li><a href="#about" onClick={() => handleNavClick('about')}>About</a></li>
                         <li><a href="#projects" onClick={() => handleNavClick('projects')}>Projects</a></li>
+                        <li><a href="#contact" onClick={() => handleNavClick('contact')}>Contact</a></li>
                         <li><a href="#logout" onClick={handleLogout}>Logout</a></li>
                         <li><a href={theme === 'light' ? '#lightTheme' : '#DarkTheme'} onClick={() => dispatch(toggleTheme())} style={{backgroundColor: 'transparent', border: '0px'}}>
-                        {theme === 'light' ? <FaMoon style={{fontSize: '30px'}} /> : <MdSunny style={{fontSize: '30px'}} />}
+                        {theme === 'light' ? <FaMoon style={{fontSize: '20px'}} /> : <MdSunny style={{fontSize: '20px'}} />}
                         </a></li>
                     </ul>
                 </div>
