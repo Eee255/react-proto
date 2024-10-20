@@ -4,7 +4,7 @@ import youtube from '../../assets/youtube.png'
 import biryani from '../../assets/biryani.jpeg'
 import spotify from '../../assets/Spotify Icon.jpeg'
 import hotstar from '../../assets/Disney+ hotstar.jpeg'
-import ecommerce from '../../assets/التسوق عبر الإنترنت ناقلات التوضيح معزولة من الهاتف الذكي مع عربة التسوق على خلفية بيضاء, أيقونات الإنترنت, أيقونات الهواتف الذكية, أيقونات سلة التسوق PNG والمتجهات للتحميل مجانا.jpeg'
+import ecommerce from '../../assets/store.jpeg'
 import './Projects.css'
 import ThemeProvider from '../../ThemeProvider';
 import { useSelector } from 'react-redux';
